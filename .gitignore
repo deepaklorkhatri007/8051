@@ -50,3 +50,20 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# sdcc compiler output
+*.ihx
+*.lk
+*.rel 
+*.mem
+*.rst 
+*.sym 
+*.map
+*.lst
+*.asm
+
+# vscode
+.vscode
+
+# testing
+test/
