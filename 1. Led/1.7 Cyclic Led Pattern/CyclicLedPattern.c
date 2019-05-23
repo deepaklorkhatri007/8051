@@ -4,21 +4,21 @@
 
 #include <at89x51.h>                // 8051 headerfile from sdcc
 
-#define time 0.5                            //  value for delay
+#define time 0.5                    //  value for delay
 
-void delay(float val);                      // Delay function initialization
+void delay(float val);              // Delay function initialization
 
 void main(){                        // Main function
     int counter = 128;              // Counter
     while(1){                       // Infinite loop
         P2 = ~counter;              // Set P2 to inverted counter
-        counter |= counter>>1;      // retain the bit and also shift to right
+        counter |= counter>>1;      // retain the bit and also shift bits to right by 1 place
         if (counter==255){          // if counter equals to 255
-            delay(time);                // provide delay
+            delay(time);            // provide delay
             P2 = ~counter;          // Set P2 to inverted counter
-            counter=128;            // Set counter to 128
+            counter=128;            // Reset counter to 128
         }
-        delay(time);                    // Provide delay
+        delay(time);                // Provide delay
     }
 }
 
