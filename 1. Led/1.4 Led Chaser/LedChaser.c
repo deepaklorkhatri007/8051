@@ -20,10 +20,10 @@ void main(){                        // Main function
 }
 
 
-void delay(){                       // Delay function definition
-    for(int i = 0; i<0xff; i++){    // Loop from 0 to 0xff(255)
-        for(int j=0; j<0xff; j++){  // Loop from 0 to 0xff(255)
-                                    // Do nothing
+void delay(float val){                      // Delay function definition
+    for(int i = 0; i<0xff*val; i++){        // Loop from 0 to 0xff(255)*val
+        for(int j=0; j<0xff; j++){          // Loop from 0 to 0xff(255)
+                                            // Do nothing
         }
     }
 }

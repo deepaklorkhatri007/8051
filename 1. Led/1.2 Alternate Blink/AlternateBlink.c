@@ -23,15 +23,27 @@ void main(){                        // Main function
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 void delay(){                       // Delay function definition
     for(int i = 0; i<0xff; i++){    // Loop from 0 to 0xff(255)
         for(int j=0; j<0xff; j++){  // Loop from 0 to 0xff(255)
                                     // Do nothing
 =======
+=======
+>>>>>>> add led projects
 void delay(float val){                      // Delay function definition
     for(int i = 0; i<0xff*val; i++){        // Loop from 0 to 0xff(255)*val
         for(int j=0; j<0xff; j++){          // Loop from 0 to 0xff(255)
                                             // Do nothing
+<<<<<<< HEAD
+>>>>>>> add led projects
+=======
+=======
+void delay(){                       // Delay function definition
+    for(int i = 0; i<0xff; i++){    // Loop from 0 to 0xff(255)
+        for(int j=0; j<0xff; j++){  // Loop from 0 to 0xff(255)
+                                    // Do nothing
+>>>>>>> fdd911265e8f3410dd563fd6832cdd0c27aad9ad
 >>>>>>> add led projects
         }
     }
